@@ -8,7 +8,7 @@ export class StaList extends React.Component{
     render(){
         return(
          
-            <div>
+            <div className="set">
             {this.props.userList.map((statu, index) => (
                 <Status
                   name={statu.name}
@@ -17,6 +17,7 @@ export class StaList extends React.Component{
                   key={statu.id}
                 />
                 ))}
+                  <hr/>
             </div>
             
         );
