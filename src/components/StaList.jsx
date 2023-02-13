@@ -1,0 +1,24 @@
+import React from "react";
+import { Status } from "./Status";
+
+export class StaList extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+         
+            <div>
+            {this.props.userList.map((statu, index) => (
+                <Status
+                  name={statu.name}
+                  imageURL={statu.imageURL}
+                  imageAlt={statu.imageAlt}
+                  key={statu.id}
+                />
+                ))}
+            </div>
+            
+        );
+    }
+}
