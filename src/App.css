@@ -81,6 +81,10 @@ body{
  
 
 }
+.set hr{
+  width: 35%;
+
+}
 .status{
   width:70px;
   height: 70px;
